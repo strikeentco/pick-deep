@@ -1,0 +1,69 @@
+{
+  "name": "pick-deep",
+  "author": "Alexey Bystrov <strikeentco@gmail.com>",
+  "version": "1.0.0",
+  "description": "Creates an object composed of the picked object properties from a nested object using a dot path or custom separator",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "keywords": [
+    "obj",
+    "object",
+    "prop",
+    "property",
+    "dot",
+    "path",
+    "pick",
+    "deep",
+    "pickDeep",
+    "pick-deep",
+    "access",
+    "notation",
+    "dotty",
+    "key",
+    "nested",
+    "paths",
+    "properties",
+    "props",
+    "segment",
+    "value",
+    "values",
+    "custom",
+    "separator",
+    "small",
+    "fast"
+  ],
+  "main": "./main.js",
+  "files": [
+    "main.js"
+  ],
+  "scripts": {
+    "test": "mocha test",
+    "lint": "eslint main.js",
+    "check": "npm run lint && npm run test",
+    "cover": "nyc ./node_modules/mocha/bin/_mocha && nyc report --reporter=html",
+    "test-on-travis": "nyc ./node_modules/mocha/bin/_mocha && nyc report --reporter=lcovonly"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strikeentco/pick-deep.git"
+  },
+  "bugs": {
+    "url": "https://github.com/strikeentco/pick-deep/issues"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "mocha": "^5.0.1",
+    "nyc": "^11.4.1",
+    "should": "^13.2.1"
+  },
+  "dependencies": {
+    "@strikeentco/get": "^1.0.0",
+    "@strikeentco/set": "^1.0.0"
+  },
+  "license": "MIT"
+}
